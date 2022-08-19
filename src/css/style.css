@@ -11,7 +11,9 @@ body {
 .section-one {      
     background: no-repeat url(../img/trofeu_Conmebol.jpg);
     background-size: cover;
-    height: 800px;    
+    height: 800px;
+    color: #F9F9F9;
+    
     
 }
 
@@ -24,6 +26,11 @@ nav {
 
 nav > img {
     width: 100px;
+}
+
+.nav-menu > a {
+    padding: 20px;
+    font-size: large;
 }
 
 div > button {
@@ -43,11 +50,33 @@ div > .button-detach {
     -o-border-radius: 6px;
 }
 
+.section-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    text-align: left;
+    font-size: xx-large;
+    margin: 120px;
+
+    
+}
+
+.text-sec1 {
+    margin: 5px;
+    width: 580px;
+    
+}
+
+.section-1 > button {
+    width: 150px;
+    margin-top: 10px;
+}
+
 .section-two {    
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 200px;
+    height: 300px;
     font-size:x-large;
 
 }
