@@ -50,6 +50,12 @@ div > .button-detach {
     -o-border-radius: 6px;
 }
 
+.menu-mobile {
+    display: flex;
+    flex-direction: column;
+    display: none;
+}
+
 .section-1 {
     display: flex;
     flex-direction: column;
@@ -150,11 +156,11 @@ article {
 .notice-card > div > div {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content:space-between;
 }
 
 .notice-card > div > img {
-    width: 360px;
+    width: 200px;
     height: 150px;
     cursor: pointer;
 }
@@ -216,4 +222,30 @@ a {
 
 button {
     cursor: pointer;    
+}
+
+@media  only screen and (max-width: 768px) {
+
+    .menu-mobile {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        color: #f9f9f9;
+        background-color: #DA2535;
+        padding: 2px 4px 2px 8px;
+        border-radius: 5px ; 
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    nav > div > button {
+        display: none;
+    }
+
+    nav {
+        justify-content: space-between;
+    }
+   
 }
